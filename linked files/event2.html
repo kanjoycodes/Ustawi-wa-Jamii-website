@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Details</title>
+  </head>
+  <link rel="stylesheet" href="event.css">
+</head>
+<body>
+  <header>
+    <!--NAVIGATION BAR-->
+    <div class="navbar">
+        <div class="logo"><b><a href="eventsList.html">ALL EVENTS</a></b></div>
+        <ul class="links">
+            <li><a href="event1.html">Build A School</a></li>
+            <li><a href="event2.html" class="chosen_tab">Clean Up Campaign</a></li>
+            <li><a href="event3.html">Educational Donation</a></li>
+            <li><a href="event4.html">Shelter Adoption</a></li>
+            <li><a href="event5.html">Health and Wellness</a></li>
+            
+        </ul>
+        <a href="#" class="action_button">JOIN US</a>
+                <div class="toggle_button">
+                    <i class="fa-solid fa-bars">More</i>
+                </div>
+            </div>
+            <!--DROPDOWN MENU WHEN SCREEN SIZE DECREASES-->
+            <div class="dropdown_menu">
+                <ul>
+                  <li><a href="event1.html">Build A School</a></li>
+                  <li><a href="event2.html" class="chosen_tab">Clean Up Campaign</a></li>
+                  <li><a href="event3.html">Educational Donation</a></li>
+                  <li><a href="event4.html">Shelter Adoption</a></li>
+                  <li><a href="event5.html">Health and Wellness</a></li>
+                </ul>
+            </div>
+  </header>
+<div class="event-details">
+    <div class="banner" style="background-image: url(./images/eve25.avif);"></div>
+    <div class="description">
+        <h2>Clean-up Campaign: Beautifying Our Parks</h2>
+        <p> Let's come together to clean up and beautify our local parks! Join
+          us for a day of community service as we pick up litter, plant
+          flowers, and maintain the beauty of our green spaces for everyone to
+          enjoy.</p>
+    </div>
+    
+    <div class="event-date">
+        Saturday, March 10, 2024 @ 10:00 AM
+    </div>
+    <a href="#" class="support-button">Support Us with Any Amount</a>
+</div>
+<!--SCRIPT FOR ADDITIONAL MENU WHEN SCREEN SIZE DECREASES-->
+<script>
+  const toggleBtn = document.querySelector('.toggle_button')
+  const toggleBtnIcon = document.querySelector('.toggle_button i')
+  const dropDownMenu = document.querySelector('.dropdown_menu')
+
+  toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ?'fa-solid fa-xmark'
+      :'fa-solid fa-bars'
+  }
+
+</script>
+</body>
+</html>

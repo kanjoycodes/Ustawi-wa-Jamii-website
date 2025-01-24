@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charity Events</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .events-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 10px;
+        padding: 10px;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .event-card {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        height: 280px;
+      }
+
+      .event-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .event-card .content {
+        padding: 10px;
+      }
+
+      .event-card h3 {
+        font-size: 18px;
+        height: 45px;
+      }
+
+      .event-card p {
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+      .event-card .button-container {
+        text-align: center;
+      }
+
+      .event-card .button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #000;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="events-container">
+      <div class="event-card">
+        <img src="./images/eve2.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Help Us Build a School</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event1.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="./images/eve25.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Clean-up Campaign: Beautifying Our Parks</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event2.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="./images/eve14.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Educational Supplies Donation Drive</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event3.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="./images/eve22.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Shelter Adoption Event</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event4.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="./images/eve16.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Health and Wellness Fair</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event5.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

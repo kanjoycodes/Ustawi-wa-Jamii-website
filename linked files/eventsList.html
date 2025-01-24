@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charity Events</title>
+    <style>
+      @import url(all.css);
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--NAVIGATION BAR-->
+      <div class="navbar">
+          <div class="logo"><a href="index.html"><i>Ustawi wa jamii</i></a></div>
+          <ul class="links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="eventsList.html" class="chosen_tab">EVENTS</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="#">ACCOUNT</a></li>
+          </ul>
+          <a href="join.html" class="action_button">JOIN US</a>
+          <div class="toggle_button">
+              <i class="fa-solid fa-bars">More</i>
+          </div>
+      </div>
+      <!--DROPDOWN MENU WHEN SCREEN SIZE DECREASES-->
+      <div class="dropdown_menu">
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="eventsList.html" class="chosen_tab">EVENTS</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="#">ACCOUNT</a></li>
+              <li><a href="join.html" class="action_button">JOIN US</a></li>
+          </ul>
+      </div>
+      
+  </header>
+    <div class="events-container">
+      <div class="event-card">
+        <img src="./images/eve2.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Help Us Build a School</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event1.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="./images/eve25.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Clean-up Campaign: Beautifying Our Parks</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event2.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="./images/eve14.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Educational Supplies Donation Drive</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event3.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="./images/eve22.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Shelter Adoption Event</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event4.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="./images/eve16.avif" alt="Event 1" />
+        <div class="content">
+          <h3>Health and Wellness Fair</h3>
+          <p></p>
+          <div class="button-container">
+            <a href="event5.html" class="button">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--SCRIPT FOR ADDITIONAL MENU WHEN SCREEN SIZE DECREASES-->
+    <script>
+      const toggleBtn = document.querySelector('.toggle_button')
+      const toggleBtnIcon = document.querySelector('.toggle_button i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+          ?'fa-solid fa-xmark'
+          :'fa-solid fa-bars'
+      }
+
+  </script>
+  </body>
+</html>

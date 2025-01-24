@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: auto;
+    background-color: #C3B1E1;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+a:hover{
+    color: #C3B1E1;
+}
+/*header*/
+header{
+    position: relative;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a {
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar .links {
+    display: flex;
+    gap: 15px;
+}
+.navbar .toggle_button {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+}
+.toggle_button:hover{
+    scale: 1.05;
+    color: #230e4488;
+    background-color: white;
+}
+.toggle_button{
+    background-color: #c3b1e188;
+    color: aliceblue;
+    padding: 0.3rem 0.8rem;
+    border-width: 50px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease
+
+}
+.action_button{
+    background-color: rgb(192, 3, 250);
+    color: aliceblue;
+    padding: 0.3rem 0.8rem;
+    border-width: 50px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease
+
+}
+.action_button:hover{
+    scale: 1.05;
+    color: black;
+}
+.action_button:active{
+    scale: 0.95;
+}
+/*DROPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(4, 0, 7, 0.486);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.dropdown_menu .action_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+/*HERO*/
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: blue;
+
+}
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+/*RESPONSIVE DESIGN*/
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_button{
+        display: none;
+    }
+
+    .navbar .toggle_button{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+
+    }
+}
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+}
+/*BODY OF THE PAGE*/
+.logo_img, .aim_img, .join_img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height:200px;
+    width:auto; 
+}
+.abt_img, .donation_img{
+    float: right;
+    margin-left: 200px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height:200px;
+    width:auto; 
+}
+.abt_img{
+    height:200px;
+    width:600px; 
+}
+.words ,.words1 ,.words2 ,.words3 ,.words4{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+.about_info, .donation_info{
+    background-color: rgba(0, 0, 0, 0.493);
+    height: auto;
+}
+.logo_info, .aim_info ,.join_info{
+    background-color: rgba(255, 250, 250, 0);
+    height: auto;
+}
